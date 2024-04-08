@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<body onload="startTime()">
+
+<div id="main">
+    <div id="txt"></div>
+    <div id="data"></div>
+</div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+
+  const month = today.getMonth();
+  const day = today.getDate();
+  const year = today.getFullYear();
+  document.getElementById('data').innerHTML = day + "." + month + "." + year;
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+</script>
+
+</body>
+</html>

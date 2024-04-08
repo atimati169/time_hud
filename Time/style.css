@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+body {
+    user-select: none;
+}
+
+#main {
+    position: relative;
+
+    top: 63rem;
+    left: 19.9rem;
+
+    width: 7rem;
+    height: 2.5rem;
+
+    border-radius: 7px;
+
+    background-color: rgba(85, 85, 85, 0.596);
+
+    color: rgb(255, 255, 255);
+
+    font-family: 'Poppins', sans-serif;
+}
+
+#txt {
+    position: relative;
+
+    left: 1.7rem;
+    top: 1.2rem;
+}
+
+#data {
+    position: relative;
+
+    left: 1.4rem;
+    top: -1.5rem;
+
+    color: rgb(255, 255, 255);
+}
